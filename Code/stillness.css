@@ -1,0 +1,366 @@
+/* Color palette from RealTimeColors */
+:root {
+    --text: #12160f;
+    --background: #fafbfa;
+    --primary: #7e9074;     
+    --secondary: #bacfab;   
+    --accent: #8f8eb1;      
+  }
+  
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+  }
+  
+  #wrapper {
+    /* align-items: center; */
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    min-height: 100vh;
+    border-left: 3px solid var(--secondary);
+    border-right: 3px solid var(--secondary);
+  }
+  
+  
+  
+  header {
+    /* align-items: center; */
+    background: linear-gradient(120deg, var(--primary), #657b5a);
+    color: #ffffff;
+    padding: 1.5em;
+    border-bottom: 4px solid var(--secondary);
+  }
+  
+  
+  header h1 {
+    /* align-items: center; */
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-size: 1.6em;
+  }
+  
+  .tagline {
+    margin-top: 0.5em;
+    font-size: 0.9em;
+  }
+  
+  
+  
+  nav {
+    background-color: #f2f6f2;
+    border-bottom: 1px solid var(--secondary);
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0.5em 1.5em;
+    text-align: center;
+  }
+  
+  nav li {
+    display: inline;
+    margin: 0 0.75em;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: bold;
+    padding: 0.25em 0.6em;
+    border-radius: 999px;
+  }
+  
+  nav a:hover {
+    background-color: var(--secondary);
+    color: var(--text);
+  }
+  
+  nav a.current {
+    background-color: var(--primary);
+    color: #ffffff;
+  }
+  
+  
+  
+  .page-hero {
+    height: 260px;
+    background-image: url("images/garden_3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    position: relative;
+  }
+
+  .page-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(3px);
+  }
+  
+  .hero-text {
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 0.7em 1.2em;
+    border-radius: 8px;
+    font-style: italic;
+    font-size: 1.15em;
+    max-width: 700px;
+    text-align: center;
+  }
+  
+  
+  
+  main {
+    padding: 1.5em;
+  }
+  
+  
+  
+  .content-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    margin-bottom: 2em;
+  }
+  
+  .primary-content {
+    flex: 2 1 380px;
+  }
+  
+  .primary-content h2 {
+    color: var(--primary);
+    font-family: Georgia, "Times New Roman", serif;
+    margin-top: 0;
+  }
+  
+  .primary-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 1em;
+    border-radius: 0.75em;
+    background-color: #f6faf4;
+    border: 1px solid var(--secondary);
+  }
+  
+  .content-image {
+    width: 500px;
+    height: 200px;
+    object-fit: cover;
+    background-color: #dfe7d6;
+    border-radius: 0.5em;
+  }
+  
+  .content-text p {
+    margin-top: 0;
+    line-height: 1.6;
+  }
+  
+  .button-row {
+    margin-top: 0.75em;
+  }
+  
+  .button {
+    display: inline-block;
+    margin-right: 0.5em;
+    margin-bottom: 0.4em;
+    padding: 0.4em 0.9em;
+    border-radius: 999px;
+    background-color: var(--primary);
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9em;
+  }
+  
+  .button.secondary {
+    background-color: var(--accent);
+  }
+  
+  .button:hover {
+    opacity: 0.9;
+  }
+  
+  
+  
+  .sidebar {
+    flex: 1 1 240px;
+    background-color: #f7faf6;
+    border-radius: 0.75em;
+    border: 1px solid var(--secondary);
+    padding: 1em;
+  }
+  
+  .sidebar h3 {
+    margin-top: 0;
+    color: var(--primary);
+  }
+  
+  .sidebar h4 {
+    margin-top: 1.1em;
+    color: var(--accent);
+  }
+  
+  .sidebar-block {
+    padding: 0.75em;
+    border-radius: 0.5em;
+    background-color: #e3ecdd;
+    font-size: 0.9em;
+  }
+  
+  .video {
+    border: 1px dashed #8fa27d;
+  }
+  
+  .sidebar-links {
+    padding-left: 1.1em;
+  }
+  
+  .sidebar-links li {
+    margin-bottom: 0.3em;
+  }
+  
+  .sidebar-links a {
+    color: #3b4a33;
+    text-decoration: none;
+  }
+  
+  .sidebar-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .sidebar-bio {
+    font-size: 0.9em;
+  }
+  
+
+  
+  .practice-highlights {
+    margin: 2em 0;
+  }
+  
+  .practice-highlights h2 {
+    color: var(--primary);
+    font-family: Georgia, "Times New Roman", serif;
+    margin-bottom: 0.5em;
+  }
+  
+  .practice-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+  }
+  
+  .practice-card {
+    flex: 1 1 260px;
+    background-color: #f9fbf7;
+    border: 1px solid #dde4d5;
+    border-radius: 0.75em;
+    padding: 1em;
+  }
+  
+  .practice-card h3 {
+    margin-top: 0;
+    color: var(--accent);
+  }
+  
+  .practice-card p {
+    margin-bottom: 0.75em;
+    line-height: 1.5;
+    color: var(--text);
+  }
+  
+  .practice-link {
+    font-size: 0.9em;
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: bold;
+  }
+  
+  .practice-link:hover {
+    text-decoration: underline;
+  }
+  
+  
+  .media-placeholder {
+    height: 130px;
+    border-radius: 0.5em;
+    margin-bottom: 0.75em;
+    background: repeating-linear-gradient(
+      45deg,
+      #e0e8d8,
+      #e0e8d8 6px,
+      #f5f8f1 6px,
+      #f5f8f1 12px
+    );
+  }
+  
+  
+  
+  .reviews-section h2 {
+    color: var(--primary);
+    font-family: Georgia, "Times New Roman", serif;
+  }
+  
+  .review-list {
+    padding-left: 1.3em;
+  }
+  
+  .review-list li {
+    margin-bottom: 0.35em;
+  }
+  
+
+  
+  footer {
+    text-align: center;
+    padding: 1em;
+    font-size: 0.85em;
+    color: #444444;
+    background-color: #f4f5f4;
+    border-top: 1px solid var(--secondary);
+  }
+  
+  footer a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  @media (max-width: 700px) {
+    main {
+      padding: 1.1em;
+    }
+  
+    nav li {
+      display: block;
+      margin: 0.25em 0;
+    }
+  
+    .page-hero {
+      height: auto;
+      padding: 1.5em 1em;
+    }
+  }
+  
