@@ -363,4 +363,38 @@
       padding: 1.5em 1em;
     }
   }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0.5em 0;
+    font-size: 0.95em;
+    table-layout: fixed;
+  }
+
+  th, td {
+    border: 1px solid #dde4d5;
+    padding: 0.6em 0.75em;
+    vertical-align: top;
+    text-align: left;
+  }
+
+  thead th {
+    background-color: #f2f6f2;
+    color: var(--primary);
+    font-weight: bold;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: #f9fbf7;
+  }
+
+
+  .primary-card + h2 {
+    margin-top: 1.5em;
+  }
+
+  .primary-card:last-of-type {
+    margin-bottom: 1.5em;
+  }
   
